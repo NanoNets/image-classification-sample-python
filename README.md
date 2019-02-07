@@ -8,19 +8,19 @@
 
 ** **
 
-## Tracking the Millenium Falcon
+## Dog Breed Identification Kaggle
 
-Images and annotations taken from - https://github.com/bourdakos1/Custom-Object-Detection
+Images and annotations taken from - https://kaggle.com/c/dog-breed-identification/data
 
 Images consists of frames taken from a clip from Star Wars: The Force Awakens.
 [![Watch the video](https://github.com/bourdakos1/Custom-Object-Detection/raw/master/screenshots/starwars_small.gif)](https://www.youtube.com/watch?v=xW2hpkoaIiM)
 
-Annotations are present for each frame and have the same name as the image name. You can find the example to train a model in python and node, by updating the api-key and model id in corresponding file. There is also a pre-processed json annotations folder that are ready payload for nanonets api.
+Labels are present for image. You can find the example to train a model in python, by updating the api-key and model id in corresponding file.
 
 
 ** **
 
-# Build an Object Detector for the Millenium Falcon
+# Build an Image Classifier for Dog Breeds
 
 >**Note:** Make sure you have python and pip installed on your system if you don't visit
 [Python](https://www.python.org/downloads/release/python-2714/)
@@ -28,13 +28,13 @@ Annotations are present for each frame and have the same name as the image name.
  
 ### Step 1: Clone the Repo
 ```bash
-git clone https://github.com/NanoNets/object-detection-sample-python.git
-cd object-detection-sample-python
+git clone https://github.com/NanoNets/image-classification-sample-python.git
+cd image-classification-sample-python
 sudo pip install requests
 ```
 
 ### Step 2: Get your free API Key
-Get your free API Key from http://development.nanonets.com/user/api_key
+Get your free API Key from https://app.nanonets.com/#/keys
 
 ### Step 3: Set the API key as an Environment Variable
 ```bash
@@ -54,7 +54,7 @@ export NANONETS_MODEL_ID=YOUR_MODEL_ID
  >_**Note:** you will get YOUR_MODEL_ID from the previous step
 
 ### Step 6: Upload the Training Data
-The training data is found in ```images``` (image files) and ```annotations``` (annotations for the image files)
+The training data is found in ```images``` (image files)
 ```bash
 python ./code/upload-training.py
 ```
@@ -82,5 +82,3 @@ python ./code/prediction.py PATH_TO_YOUR_IMAGE.jpg
 python ./code/prediction.py ./images/videoplayback0051.jpg
 ```
 
-
-*Note the python sample uses the comverted json instead of the xml payload for convenience purposes, hence it has no dependencies.*
