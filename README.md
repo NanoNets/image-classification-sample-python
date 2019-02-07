@@ -12,8 +12,10 @@
 
 Images and annotations taken from - https://kaggle.com/c/dog-breed-identification/data
 
+<p align="center"> 
 Images consists of frames taken from a clip from Star Wars: The Force Awakens.
-[![Watch the video](https://im.ezgif.com/tmp/ezgif-1-54dde1602bde.gif | width=100%)]
+<img height="400px" src="https://im.ezgif.com/tmp/ezgif-1-54dde1602bde.gif"/>
+</p>
 
 Labels are present for image. You can find the example to train a model in python, by updating the api-key and model id in corresponding file.
 
