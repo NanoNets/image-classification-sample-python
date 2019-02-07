@@ -10,10 +10,9 @@
 
 ## Dog Breed Identification Kaggle
 
-Images and annotations taken from - https://kaggle.com/c/dog-breed-identification/data
+### Images and annotations taken from - https://kaggle.com/c/dog-breed-identification/data
 
 <p align="center"> 
-Images consists of frames taken from a clip from Star Wars: The Force Awakens.
 <img height="400px" src="https://im.ezgif.com/tmp/ezgif-1-54dde1602bde.gif"/>
 </p>
 
